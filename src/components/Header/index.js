@@ -1,6 +1,7 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import logo from "../../assets/logo.png";
+import logo2 from "../../assets/logo2.png";
 
 function Header() {
   const classes = useStyles();
@@ -8,6 +9,7 @@ function Header() {
     <Box className={classes.mainContainer}>
       <Box className={classes.innerContainer}>
         <img className={classes.logoImage} src={logo} alt="logo" />
+        <img className={classes.logosec} src={logo2} alt="logo" />
       </Box>
       <Box className={classes.secContainer}>
         <Box>
@@ -46,7 +48,9 @@ const useStyles = makeStyles((theme) => ({
       width: 150,
     },
   },
-
+  logosec: {
+    paddingBottom: "5px",
+  },
   secContainer: {
     paddingRight: 50,
     paddingTop: "18px",
