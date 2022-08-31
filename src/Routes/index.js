@@ -5,9 +5,11 @@ import Header from "../components/Header";
 
 const RoutesMain = () => {
   return (
-    <Router>
-      <Header />
-    </Router>
+    <>
+      <Router>
+        <Header />
+      </Router>
+    </>
   );
 };
 
