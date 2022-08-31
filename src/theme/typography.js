@@ -5,6 +5,7 @@ const typography = {
   fontStyle: "normal",
   fontWeight: "normal",
   color: palette.secondary.main,
+  backgroundColor: "transparent",
 
   h1: {
     display: "flex",
@@ -25,9 +26,10 @@ const typography = {
   },
   h3: {
     color: palette.text.secondary,
-    fontWeight: 700,
+    fontWeight: 400,
     fontSize: "16px",
-    lineHeight: "22px",
+    lineHeight: "24px",
+    fontFamily: "bitter",
   },
 
   body1: {
