@@ -1,4 +1,6 @@
-import { Divider, makeStyles, Typography } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
+import DividerLine from "../../units/Divider";
+import InfoIcon from "@material-ui/icons/Info";
 
 const CandidateScoreBoard = () => {
   const classes = useStyles();
@@ -13,7 +15,7 @@ const CandidateScoreBoard = () => {
           “Next” button or the section tabs below.
         </Typography>
       </div>
-      <Divider gutterTop className={classes.divider} />
+      <DividerLine />
       <div className={classes.rowsbar}>
         <Typography>General {">"}</Typography>
         <Typography>
@@ -25,6 +27,10 @@ const CandidateScoreBoard = () => {
         </Typography>
         <Typography>Values {">"}</Typography>
         <Typography> Summary {">"}</Typography>
+      </div>
+      <div style={{ display: "flex" }}>
+        <InfoIcon />
+        <Typography>General</Typography>
       </div>
     </div>
   );
@@ -47,5 +53,6 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "40px",
     justifyContent: "space-between",
     width: "60%",
+    marginBottom: "20px",
   },
 }));

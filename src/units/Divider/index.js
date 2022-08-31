@@ -7,5 +7,5 @@ const DividerLine = (props) => {
 export default DividerLine;
 
 const useStyles = makeStyles((theme) => ({
-  divider: {},
+  divider: { color: "red" },
 }));
