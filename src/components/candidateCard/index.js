@@ -25,7 +25,6 @@ export default CandidateCard;
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     display: "flex",
-    border: "1px dotted #ccc",
     background: theme.palette.background.primary,
     width: "252px",
   },
@@ -53,13 +52,3 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "19px",
   },
 }));
-
-// {Data.map((item) => {
-//   return (
-//     <CandidateCard
-//       username={item.username}
-//       image={item.image}
-//       catagory={item.catagory}
-//     />
-//   );
-// })}

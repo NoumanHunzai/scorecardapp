@@ -26,9 +26,10 @@ const typography = {
   },
   h3: {
     color: palette.text.secondary,
-    fontWeight: 700,
+    fontWeight: 400,
     fontSize: "16px",
-    lineHeight: "22px",
+    lineHeight: "24px",
+    fontFamily: "bitter",
   },
 
   body1: {
