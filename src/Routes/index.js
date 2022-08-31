@@ -8,7 +8,7 @@ import SelectCandidate from "../pages/SelectCandidate";
 
 const RoutesMain = () => {
   return (
-    <>
+    <div>
       <Router>
         <Header />
         <Routes>
@@ -17,7 +17,7 @@ const RoutesMain = () => {
           <Route exact path="/selectcandidate" element={<SelectCandidate />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 };
 

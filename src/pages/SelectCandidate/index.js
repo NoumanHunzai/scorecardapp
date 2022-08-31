@@ -11,7 +11,7 @@ const SelectCandidate = () => {
         <Typography variant="h1" align="center" className={classes.typo}>
           SELECT CANDIDATES
         </Typography>
-        <Typography variant="h3" align="center" className={classes.desc}>
+        <Typography variant="body1" align="center" className={classes.desc}>
           Kindly select the candidate(s) you wish to score. You can select up to
           3 candidates. If you wish to change a selected candidate,
           <br />
