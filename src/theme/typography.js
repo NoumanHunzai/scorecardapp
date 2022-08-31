@@ -20,7 +20,7 @@ const typography = {
     color: palette.text.secondary,
 
     fontWeight: 700,
-    fontSize: "24px",
+    fontSize: "15px",
     lineHeight: "34px",
   },
   h3: {
@@ -35,13 +35,6 @@ const typography = {
     fontWeight: 400,
     fontSize: "16px",
     lineHeight: "22px",
-  },
-
-  button: {
-    color: palette.text.secondary,
-    fontSize: "15px",
-    lineHeight: "20px",
-    fontWeight: "bold",
   },
 };
 
