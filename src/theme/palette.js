@@ -23,6 +23,7 @@ const palette = {
   text: {
     primary: "#000000",
     secondary: "#092D2D",
+    select: lc,
   },
   background: {
     default: "linear-gradient(180deg, #ebf0f0 0%, #ffffff 100%);",
