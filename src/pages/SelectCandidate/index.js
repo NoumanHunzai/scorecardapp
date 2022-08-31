@@ -56,6 +56,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 400,
     fontSize: "16px",
     padding: "2em",
+    letterSpacing: "0.05em",
   },
   select: {
     color: `${theme.palette.text.select} !important`,

@@ -9,12 +9,14 @@ const text = "#0F4C4B";
 const lc = "#87A5A5";
 const vlc = "#8EA7A3";
 const dc = "#092D2D";
+const shade = "#828282";
+
 const palette = {
   black,
   white,
   primary: {
     contrastText: black,
-    main: "##0F4C4B",
+    main: text,
   },
   secondary: {
     contrastText: white,
@@ -24,6 +26,7 @@ const palette = {
     primary: "#000000",
     secondary: "#092D2D",
     select: lc,
+    shadow: shade,
   },
   background: {
     default: "linear-gradient(180deg, #ebf0f0 0%, #ffffff 100%);",

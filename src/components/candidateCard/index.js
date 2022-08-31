@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     background: theme.palette.background.primary,
     width: "252px",
+    cursor: "pointer",
   },
   leftContainer: {
     width: "104px",
