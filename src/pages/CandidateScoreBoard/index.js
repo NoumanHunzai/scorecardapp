@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
   scoremain: {
     padding: "20px 50px",
     display: "flex",
-
+    minHeight: "100vh",
     flexDirection: "column",
   },
   textScore: {
