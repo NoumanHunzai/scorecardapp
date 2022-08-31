@@ -10,7 +10,6 @@ const typography = {
   h1: {
     display: "flex",
     justifyContent: "center",
-    color: palette.secondary.main,
 
     fontStyle: "normal",
     fontWeight: 700,
@@ -18,22 +17,19 @@ const typography = {
     lineHeight: "45px",
   },
   h2: {
-    color: palette.text.secondary,
-
     fontWeight: 700,
     fontSize: "15px",
     lineHeight: "34px",
   },
   h3: {
+    fontWeight: 700,
     color: palette.text.secondary,
-    fontWeight: 400,
     fontSize: "16px",
     lineHeight: "24px",
     fontFamily: "bitter",
   },
 
   body1: {
-    color: palette.text.secondary,
     fontWeight: 400,
     fontSize: "16px",
     lineHeight: "22px",

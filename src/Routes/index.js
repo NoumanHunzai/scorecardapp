@@ -7,7 +7,7 @@ import CandidateScoreBoard from "../pages/CandidateScoreBoard";
 
 const RoutesMain = () => {
   return (
-    <>
+    <div>
       <Router>
         <Header />
         <Routes>
@@ -15,7 +15,7 @@ const RoutesMain = () => {
           <Route exact path="/score" element={<CandidateScoreBoard />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 };
 

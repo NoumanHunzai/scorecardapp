@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
   },
   innerContainer: {
+    display: "flex",
     paddingLeft: 50,
     paddingTop: 10,
     [theme.breakpoints.down("sm")]: {
@@ -45,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     width: " 206px",
     height: "48px",
     [theme.breakpoints.down("sm")]: {
-      width: 150,
+      width: 100,
     },
   },
   logosec: {
@@ -58,8 +59,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-around",
     [theme.breakpoints.down("sm")]: {
-      paddingLeft: 0,
+      paddingRight: 0,
     },
   },
-  Typooo: {},
+  Typooo: {
+    fontWeight: 400,
+    fontSize: 16,
+    color: theme.palette.secondary.main,
+  },
 }));
