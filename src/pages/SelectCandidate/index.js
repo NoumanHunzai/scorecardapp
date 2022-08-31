@@ -52,8 +52,8 @@ const SelectCandidate = () => {
           })}
         </Grid>
       </Box>
-      <Box>
-        <Buttons>Done</Buttons>
+      <Box className={classes.btnContainer}>
+        <Buttons variant="green">Done</Buttons>
       </Box>
     </Box>
   );
@@ -86,5 +86,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       padding: "1em",
     },
+  },
+
+  btnContainer: {
+    padding: "1em",
+    textAlign: "center",
   },
 }));
