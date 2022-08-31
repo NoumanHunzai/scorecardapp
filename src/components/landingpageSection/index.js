@@ -19,8 +19,10 @@ export default function SectionLanding() {
         <Box className={classes.Sectiontwo}>
           <Sectiontwo />
         </Box>
-        <Box cl>
-          <Buttons variant="green">TAKE POLL</Buttons>
+        <Box className={classes.SectionButton}>
+          <Buttons variant="green" className={classes.Buttons}>
+            take poll
+          </Buttons>
         </Box>
       </Box>
     </Box>
@@ -59,8 +61,21 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    [theme.breakpoints.down("md")]: {
+      padding: "0px 70px 0px 70px",
+    },
     [theme.breakpoints.down("sm")]: {
       width: "100%",
+      padding: "0px 5px 0px 5px",
     },
+  },
+  SectionButton: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  Buttons: {
+    fontFamily: "Inter ",
+    textTransform: "capitalize",
   },
 }));
