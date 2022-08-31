@@ -20,6 +20,7 @@ const palette = {
   background: {
     default: "linear-gradient(180deg, #ebf0f0 0%, #ffffff 100%);",
     paper: white,
+    primary: white,
   },
 };
 

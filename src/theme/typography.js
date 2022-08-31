@@ -5,6 +5,7 @@ const typography = {
   fontStyle: "normal",
   fontWeight: "normal",
   color: palette.secondary.main,
+  backgroundColor: "transparent",
 
   h1: {
     display: "flex",
