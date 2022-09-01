@@ -15,7 +15,8 @@ const palette = {
   },
   text: {
     primary: "#000000",
-    secondary: "#092D2D",
+
+    bold: "#0F4C4B",
   },
   background: {
     default: "linear-gradient(180deg, #ebf0f0 0%, #ffffff 100%);",
