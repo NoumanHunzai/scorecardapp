@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, makeStyles, Typography } from "@material-ui/core";
 import Sectiontwo from "../landingSecTwo";
+import Buttons from "../../units/buttons";
 
 export default function SectionLanding() {
   const classes = useStyles();
@@ -17,6 +18,9 @@ export default function SectionLanding() {
         </Box>
         <Box className={classes.Sectiontwo}>
           <Sectiontwo />
+        </Box>
+        <Box>
+          <Buttons variant="green">TAKE POLL</Buttons>
         </Box>
       </Box>
     </Box>
