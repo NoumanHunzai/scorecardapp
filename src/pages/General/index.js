@@ -35,7 +35,7 @@ const General = () => {
         <InfoIcon className={classes.icon} />
         <Typography variant="h3">General</Typography>
       </div>
-      <DividerLine margin={"30px 0px"} height={"3px"} />
+      <DividerLine margin={"40px 0px 2px 0px"} height={"3px"} />
       <div className={classes.names}>
         <Typography variant="h4">Candidate Name1</Typography>
         <Typography variant="h4">Candidate Name1</Typography>
@@ -106,18 +106,9 @@ const General = () => {
 export default General;
 
 const useStyles = makeStyles((theme) => ({
-  scoremain: {
-    padding: "20px 50px",
-    display: "flex",
-    minHeight: "100vh",
-    flexDirection: "column",
-  },
-  textScore: {
-    textAlign: "center",
-  },
   rowsbar: {
     display: "flex",
-    paddingTop: "40px",
+
     justifyContent: "space-between",
     width: "60%",
     marginBottom: "20px",

@@ -35,7 +35,7 @@ const Global = () => {
         <InfoIcon className={classes.icon} />
         <Typography variant="h3">Global {"&"} Business Exposure</Typography>
       </div>
-      <DividerLine margin={"30px 0px"} height={"3px"} />
+      <DividerLine margin={"40px 0px 2px 0px"} height={"3px"} />
       <div className={classes.names}>
         <Typography variant="h4">Candidate Name1</Typography>
         <Typography variant="h4">Candidate Name1</Typography>
@@ -108,7 +108,7 @@ export default Global;
 const useStyles = makeStyles((theme) => ({
   rowsbar: {
     display: "flex",
-    paddingTop: "40px",
+
     justifyContent: "space-between",
     width: "60%",
     marginBottom: "20px",

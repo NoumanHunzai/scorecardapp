@@ -17,7 +17,7 @@ const CandidateScoreBoard = () => {
           candidate(s) using the “Next” button or the section tabs below.
         </Typography>
       </div>
-      <DividerLine margin={"10px 0px"} />
+      <DividerLine margin={"10px 0px 0px 0px"} />
       <Outlet />
     </div>
   );
@@ -27,9 +27,9 @@ export default CandidateScoreBoard;
 
 const useStyles = makeStyles((theme) => ({
   scoremain: {
-    padding: "20px 50px",
+    padding: "0px 50px",
     display: "flex",
-    minHeight: "100vh",
+    maxHeight: "100vh",
     flexDirection: "column",
   },
   textScore: {
