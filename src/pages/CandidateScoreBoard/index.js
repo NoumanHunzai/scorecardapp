@@ -2,6 +2,7 @@ import { makeStyles, Typography } from "@material-ui/core";
 import DividerLine from "../../units/Divider";
 import InfoIcon from "@material-ui/icons/Info";
 import Select from "../../units/select";
+import Button from "../../units/buttons";
 
 const CandidateScoreBoard = () => {
   const classes = useStyles();
@@ -82,6 +83,19 @@ const CandidateScoreBoard = () => {
           <Typography variant="subtitle1">Total candidate points</Typography>
           <Typography variant="subtitle1">Total candidate points</Typography>
         </div>
+      </div>
+      <div style={{ marginTop: "20px", textAlign: "center" }}>
+        <Button
+          style={{
+            minWidth: "100px",
+            color: "white",
+            fontWeight: "700",
+            fontSize: "24px",
+            textTransform: "capitalize",
+          }}
+        >
+          Next
+        </Button>
       </div>
     </div>
   );
