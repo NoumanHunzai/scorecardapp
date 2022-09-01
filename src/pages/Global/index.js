@@ -3,33 +3,23 @@ import DividerLine from "../../units/Divider";
 import InfoIcon from "@material-ui/icons/Info";
 import Select from "../../units/select";
 import Button from "../../units/buttons";
+import { useNavigate } from "react-router-dom";
 
-const CandidateScoreBoard = () => {
+const Global = () => {
   const classes = useStyles();
+  const navigate = useNavigate();
   return (
-    <div className={classes.scoremain}>
-      <div className={classes.textScore}>
-        <Typography gutterBottom variant="h1">
-          CANDIDATE SCORECARD
-        </Typography>
-        <Typography gutterBottom variant="paragraph">
-          You’d be scoring your selected candidates in 4 sections namely:
-          General, Knowledge Political History, Global {"&"} Business
-          <br /> Exposure and Values. You can move forward after scoring your
-          candidate(s) using the “Next” button or the section tabs below.
-        </Typography>
-      </div>
-      <DividerLine margin={"10px 0px"} />
+    <div>
       <div className={classes.rowsbar}>
         <Typography variant="body1">
           General <span className={classes.arrow}>{">"}</span>
         </Typography>
-        <Typography variant="body2">
+        <Typography variant="body1">
           Knowledge{"&"}Political History{" "}
           <span className={classes.arrow}>{">"}</span>
         </Typography>
 
-        <Typography variant="body2">
+        <Typography variant="body1">
           Global{"&"}Business Exposure{" "}
           <span className={classes.arrow}>{">"}</span>
         </Typography>
@@ -45,7 +35,7 @@ const CandidateScoreBoard = () => {
         <InfoIcon className={classes.icon} />
         <Typography variant="h3">Global {"&"} Business Exposure</Typography>
       </div>
-      <DividerLine margin={"30px 0px"} height={"3px"} />
+      <DividerLine margin={"40px 0px 2px 0px"} height={"3px"} />
       <div className={classes.names}>
         <Typography variant="h4">Candidate Name1</Typography>
         <Typography variant="h4">Candidate Name1</Typography>
@@ -102,6 +92,9 @@ const CandidateScoreBoard = () => {
             fontSize: "24px",
             textTransform: "capitalize",
           }}
+          onClick={() => {
+            navigate("/score/values");
+          }}
         >
           Next
         </Button>
@@ -110,21 +103,12 @@ const CandidateScoreBoard = () => {
   );
 };
 
-export default CandidateScoreBoard;
+export default Global;
 
 const useStyles = makeStyles((theme) => ({
-  scoremain: {
-    padding: "20px 50px",
-    display: "flex",
-    minHeight: "100vh",
-    flexDirection: "column",
-  },
-  textScore: {
-    textAlign: "center",
-  },
   rowsbar: {
     display: "flex",
-    paddingTop: "40px",
+
     justifyContent: "space-between",
     width: "60%",
     marginBottom: "20px",

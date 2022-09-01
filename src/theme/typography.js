@@ -78,7 +78,7 @@ const typography = {
     fontFamily: "Nunito Sans, sans-serif",
     fontStyle: "normal",
   },
-  paragraphy: {
+  paragraph: {
     color: palette.primary.main,
     fontWeight: 400,
     fontSize: "16px",
