@@ -40,8 +40,6 @@ const RoutesMain = () => {
 
           <Route exact path="/summary" element={<SummaryPage />} />
           <Route exact path="/score" element={<CandidateScoreBoard />} />
-
-          <Route exact path="/selectcandidate" element={<SelectCandidate />} />
         </Routes>
       </Router>
     </div>

@@ -3,6 +3,7 @@ import Data from "../../components/candidateCard/data";
 import { Box, Typography, makeStyles, Grid } from "@material-ui/core";
 import CandidateCard from "../../components/candidateCard";
 import Buttons from "../../units/buttons";
+import { Link } from "react-router-dom";
 
 const SelectCandidate = () => {
   const classes = useStyles();
@@ -45,7 +46,9 @@ const SelectCandidate = () => {
         </Grid>
       </Box>
       <Box className={classes.btnContainer}>
-        <Buttons variant="green">Done</Buttons>
+        <Link to="/score/general">
+          <Buttons variant="green">Done</Buttons>
+        </Link>
       </Box>
     </Box>
   );
