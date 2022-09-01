@@ -19,7 +19,7 @@ export default function SectionLanding() {
         <Box className={classes.Sectiontwo}>
           <Sectiontwo />
         </Box>
-        <Box>
+        <Box cl>
           <Buttons variant="green">TAKE POLL</Buttons>
         </Box>
       </Box>
