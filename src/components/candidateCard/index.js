@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, makeStyles, Typography } from "@material-ui/core";
+import { Box, makeStyles, Typography, Grid } from "@material-ui/core";
 
 const CandidateCard = ({ username, catagory, image }) => {
   const classes = useStyles();
@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     background: theme.palette.background.primary,
     width: "252px",
+    cursor: "pointer",
   },
   leftContainer: {
     width: "104px",
@@ -37,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   rightContainer: {
-    color: theme.palette.primary.main,
+    color: theme.palette.background.primary,
     padding: "1.5em 0.5em 1.5em 0.8em",
   },
   heading: {
