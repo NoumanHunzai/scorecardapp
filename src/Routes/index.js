@@ -6,6 +6,7 @@ import Home from "../pages/home";
 import SummaryPage from "../pages/summaryPage";
 import CandidateScoreBoard from "../pages/CandidateScoreBoard";
 import SelectCandidate from "../pages/SelectCandidate";
+import Login from "../pages/login";
 
 const RoutesMain = () => {
   return (
@@ -13,12 +14,14 @@ const RoutesMain = () => {
       <Router>
         <Header />
         <Routes>
-         
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/summary" element={<SummaryPage/>} />
+          <Route exact path="/login" element={<Login />} />
           <Route exact path="/score" element={<CandidateScoreBoard />} />
           <Route exact path="/selectcandidate" element={<SelectCandidate />} />
 
+          <Route exact path="/summary" element={<SummaryPage />} />
+          <Route exact path="/score" element={<CandidateScoreBoard />} />
+          <Route exact path="/selectcandidate" element={<SelectCandidate />} />
         </Routes>
       </Router>
     </div>
