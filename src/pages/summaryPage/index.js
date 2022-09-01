@@ -33,7 +33,7 @@ const SummaryPage = () => {
           Global{"&"}Business Exposure <span className={classes.tabsPadding}>{">"}</span>
         </Typography>
         <Typography className={classes.rowsTab}>Values  <span className={classes.tabsPadding}>{">"}</span></Typography>
-        <Typography className={classes.rowsTab}> Summary  <span className={classes.tabsPadding}>{">"}</span></Typography>
+        <Typography className={classes.rowsTab}> Summary  </Typography>
       </div>
         <div className={classes.chartDetailsContainer}>
           <img className={classes.chart} src={chart} alt="chart"/>
