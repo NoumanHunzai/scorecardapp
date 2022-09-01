@@ -9,10 +9,10 @@ const CandidateCard = ({ username, catagory, image }) => {
         <img src={image} alt="Avatar" />
       </Box>
       <Box className={classes.rightContainer}>
-        <Typography variant="h3" className={classes.heading}>
+        <Typography variant="body2" className={classes.heading}>
           {username}
         </Typography>
-        <Typography variant="h3" className={classes.catagory}>
+        <Typography variant="body2" className={classes.catagory}>
           {catagory}
         </Typography>
       </Box>
@@ -38,18 +38,14 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   rightContainer: {
-    color: theme.palette.background.primary,
     padding: "1.5em 0.5em 1.5em 0.8em",
   },
   heading: {
-    fontWeight: "400",
-    fontSize: "16px",
-    lineHeight: "19px",
     paddingBottom: "0.3em",
+    color: `${theme.palette.primary.main} !important`,
   },
   catagory: {
-    fontWeight: "700",
-    fontSize: "16px",
-    lineHeight: "19px",
+    fontWeight: 700,
+    color: `${theme.palette.primary.main} !important`,
   },
 }));
