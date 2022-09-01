@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Data from "../../components/candidateCard/data";
 import { Box, Typography, makeStyles, Grid } from "@material-ui/core";
 import CandidateCard from "../../components/candidateCard";
@@ -6,12 +6,7 @@ import Buttons from "../../units/buttons";
 
 const SelectCandidate = () => {
   const classes = useStyles();
-  const [selected, setSelected] = useState(false);
 
-  const handleClick = () => {
-    setSelected(!selected);
-    console.log(selected, "selected");
-  };
   return (
     <Box className={classes.mainContainer}>
       <Box>
@@ -43,9 +38,6 @@ const SelectCandidate = () => {
                   username={item.username}
                   image={item.image}
                   catagory={item.catagory}
-                  onClick={() => {
-                    handleClick();
-                  }}
                 />
               </Grid>
             );
