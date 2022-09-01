@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     color: `${theme.palette.primary.main} !important`,
   },
   catagory: {
-    fontWeight: 700,
+    fontWeight: "700 !important",
     color: `${theme.palette.primary.main} !important`,
   },
   checkImg: {
