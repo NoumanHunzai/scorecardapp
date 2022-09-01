@@ -85,13 +85,7 @@ const Global = () => {
       </div>
       <div style={{ marginTop: "20px", textAlign: "center" }}>
         <Button
-          style={{
-            padding: "10px 70px",
-            color: "white",
-            fontWeight: "700",
-            fontSize: "24px",
-            textTransform: "capitalize",
-          }}
+          variant="green"
           onClick={() => {
             navigate("/score/values");
           }}
