@@ -16,3 +16,8 @@ body {
   background: linear-gradient(180deg, #ebf0f0 0%, #ffffff 100%);
   min-height: "100vh";
 }
+
+
+div.barChart-container {
+width: 70%;
+}
