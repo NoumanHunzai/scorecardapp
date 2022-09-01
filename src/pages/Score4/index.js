@@ -43,7 +43,7 @@ const CandidateScoreBoard = () => {
       </div>
       <div style={{ display: "flex" }}>
         <InfoIcon className={classes.icon} />
-        <Typography variant="h3">General</Typography>
+        <Typography variant="h3">Values</Typography>
       </div>
       <DividerLine margin={"30px 0px"} height={"3px"} />
       <div className={classes.names}>
@@ -54,7 +54,7 @@ const CandidateScoreBoard = () => {
       <DividerLine margin={"10px 0px"} height={"2px"} />
       <div style={{ display: "flex" }}>
         <InfoIcon className={classes.icon} />
-        <Typography variant="h4">Candidate Age</Typography>
+        <Typography variant="h4">Integrity/Morality/Corruption</Typography>
         <div className={classes.names}>
           <Select />
           <Select />
@@ -64,7 +64,7 @@ const CandidateScoreBoard = () => {
       <DividerLine margin={"10px 0px"} height={"2px"} />
       <div style={{ display: "flex" }}>
         <InfoIcon className={classes.icon} />
-        <Typography variant="h4">Level Of Education</Typography>
+        <Typography variant="h4">Demonstrating Compassion</Typography>
         <div className={classes.names}>
           <Select />
           <Select />
@@ -74,7 +74,7 @@ const CandidateScoreBoard = () => {
       <DividerLine margin={"10px 0px"} height={"2px"} />
       <div style={{ display: "flex" }}>
         <InfoIcon className={classes.icon} />
-        <Typography variant="h4">National Recoginition</Typography>
+        <Typography variant="h4">Marital Status</Typography>
         <div className={classes.names}>
           <Select />
           <Select />
