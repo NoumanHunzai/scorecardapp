@@ -6,3 +6,13 @@
 
   font-family: "Nunito Sans", sans-serif;
 }
+.divIndent {
+  display: flex;
+}
+.indent_left {
+  padding-left: 10px;
+}
+body {
+  background: linear-gradient(180deg, #ebf0f0 0%, #ffffff 100%);
+  min-height: "100vh";
+}
