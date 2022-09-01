@@ -3,37 +3,27 @@ import DividerLine from "../../units/Divider";
 import InfoIcon from "@material-ui/icons/Info";
 import Select from "../../units/select";
 import Button from "../../units/buttons";
+import { useNavigate } from "react-router-dom";
 
-const CandidateScoreBoard = () => {
+const Values = () => {
   const classes = useStyles();
+  const navigate = useNavigate();
   return (
-    <div className={classes.scoremain}>
-      <div className={classes.textScore}>
-        <Typography gutterBottom variant="h1">
-          CANDIDATE SCORECARD
-        </Typography>
-        <Typography gutterBottom variant="paragraph">
-          You’d be scoring your selected candidates in 4 sections namely:
-          General, Knowledge Political History, Global {"&"} Business
-          <br /> Exposure and Values. You can move forward after scoring your
-          candidate(s) using the “Next” button or the section tabs below.
-        </Typography>
-      </div>
-      <DividerLine margin={"10px 0px"} />
+    <div>
       <div className={classes.rowsbar}>
         <Typography variant="body1">
           General <span className={classes.arrow}>{">"}</span>
         </Typography>
-        <Typography variant="body2">
+        <Typography variant="body1">
           Knowledge{"&"}Political History{" "}
           <span className={classes.arrow}>{">"}</span>
         </Typography>
 
-        <Typography variant="body2">
+        <Typography variant="body1">
           Global{"&"}Business Exposure{" "}
           <span className={classes.arrow}>{">"}</span>
         </Typography>
-        <Typography variant="body2">
+        <Typography variant="body1">
           Values <span className={classes.arrow}>{">"}</span>
         </Typography>
         <Typography variant="body2">
@@ -102,6 +92,9 @@ const CandidateScoreBoard = () => {
             fontSize: "24px",
             textTransform: "capitalize",
           }}
+          onClick={() => {
+            navigate("/summary");
+          }}
         >
           Next
         </Button>
@@ -110,7 +103,7 @@ const CandidateScoreBoard = () => {
   );
 };
 
-export default CandidateScoreBoard;
+export default Values;
 
 const useStyles = makeStyles((theme) => ({
   scoremain: {

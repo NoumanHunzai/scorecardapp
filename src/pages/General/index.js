@@ -1,25 +1,15 @@
 import { makeStyles, Typography } from "@material-ui/core";
+import Buttons from "../../units/buttons";
 import DividerLine from "../../units/Divider";
-import InfoIcon from "@material-ui/icons/Info";
 import Select from "../../units/select";
-import Button from "../../units/buttons";
+import InfoIcon from "@material-ui/icons/Info";
+import { useNavigate } from "react-router-dom";
 
-const CandidateScoreBoard = () => {
+const General = () => {
   const classes = useStyles();
+  const navigate = useNavigate();
   return (
-    <div className={classes.scoremain}>
-      <div className={classes.textScore}>
-        <Typography gutterBottom variant="h1">
-          CANDIDATE SCORECARD
-        </Typography>
-        <Typography gutterBottom variant="paragraph">
-          You’d be scoring your selected candidates in 4 sections namely:
-          General, Knowledge Political History, Global {"&"} Business
-          <br /> Exposure and Values. You can move forward after scoring your
-          candidate(s) using the “Next” button or the section tabs below.
-        </Typography>
-      </div>
-      <DividerLine margin={"10px 0px"} />
+    <>
       <div className={classes.rowsbar}>
         <Typography variant="body1">
           General <span className={classes.arrow}>{">"}</span>
@@ -43,7 +33,7 @@ const CandidateScoreBoard = () => {
       </div>
       <div style={{ display: "flex" }}>
         <InfoIcon className={classes.icon} />
-        <Typography variant="h3">Global {"&"} Business Exposure</Typography>
+        <Typography variant="h3">General</Typography>
       </div>
       <DividerLine margin={"30px 0px"} height={"3px"} />
       <div className={classes.names}>
@@ -54,7 +44,7 @@ const CandidateScoreBoard = () => {
       <DividerLine margin={"10px 0px"} height={"2px"} />
       <div style={{ display: "flex" }}>
         <InfoIcon className={classes.icon} />
-        <Typography variant="h4">Manifesto - Recovery Plan</Typography>
+        <Typography variant="h4">Candidate Age</Typography>
         <div className={classes.names}>
           <Select />
           <Select />
@@ -64,7 +54,7 @@ const CandidateScoreBoard = () => {
       <DividerLine margin={"10px 0px"} height={"2px"} />
       <div style={{ display: "flex" }}>
         <InfoIcon className={classes.icon} />
-        <Typography variant="h4">Manifesto - Economic Plan</Typography>
+        <Typography variant="h4">Level Of Education</Typography>
         <div className={classes.names}>
           <Select />
           <Select />
@@ -74,7 +64,7 @@ const CandidateScoreBoard = () => {
       <DividerLine margin={"10px 0px"} height={"2px"} />
       <div style={{ display: "flex" }}>
         <InfoIcon className={classes.icon} />
-        <Typography variant="h4">Manifesto - Addressing Insecurity</Typography>
+        <Typography variant="h4">National Recoginition</Typography>
         <div className={classes.names}>
           <Select />
           <Select />
@@ -94,7 +84,7 @@ const CandidateScoreBoard = () => {
         </div>
       </div>
       <div style={{ marginTop: "20px", textAlign: "center" }}>
-        <Button
+        <Buttons
           style={{
             padding: "10px 70px",
             color: "white",
@@ -102,15 +92,18 @@ const CandidateScoreBoard = () => {
             fontSize: "24px",
             textTransform: "capitalize",
           }}
+          onClick={() => {
+            navigate("/score/knowledge");
+          }}
         >
           Next
-        </Button>
+        </Buttons>
       </div>
-    </div>
+    </>
   );
 };
 
-export default CandidateScoreBoard;
+export default General;
 
 const useStyles = makeStyles((theme) => ({
   scoremain: {
