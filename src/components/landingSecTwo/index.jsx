@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: 60,
       fontweight: 700,
       fontSize: 14,
-      fontFamily: theme.fontFamily,
+      fontFamily: "Bitter",
       color: theme.palette.text.bold,
       [theme.breakpoints.down("md")]: {
         padding: 0,

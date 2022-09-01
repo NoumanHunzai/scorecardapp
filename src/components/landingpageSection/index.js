@@ -2,7 +2,7 @@ import React from "react";
 import { Box, makeStyles, Typography } from "@material-ui/core";
 import Sectiontwo from "../landingSecTwo";
 import Buttons from "../../units/buttons";
-
+import { Link } from "react-router-dom";
 export default function SectionLanding() {
   const classes = useStyles();
   return (
@@ -20,9 +20,11 @@ export default function SectionLanding() {
           <Sectiontwo />
         </Box>
         <Box className={classes.SectionButton}>
-          <Buttons variant="green" className={classes.Buttons}>
-            take poll
-          </Buttons>
+          <Link to="/login">
+            <Buttons variant="green" className={classes.Buttons}>
+              take poll
+            </Buttons>
+          </Link>
         </Box>
       </Box>
     </Box>
@@ -31,7 +33,7 @@ export default function SectionLanding() {
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    paddingTop: 120,
+    paddingTop: 90,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -73,6 +75,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    padding: "10px 0px 60px 0px",
   },
   Buttons: {
     fontFamily: "Inter ",
