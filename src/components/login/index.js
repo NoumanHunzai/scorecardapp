@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
   },
   mainContainer: {
     width: 600,
-    height: 500,
+    height: "91vh",
     margin: "auto",
     paddingTop: 100,
 
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
 
     [theme.breakpoints.down("sm")]: {
-      paddingLeft: 120,
+      paddingLeft: 30,
     },
   },
 
@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   buttonSection: {
-    marginBottom: "50px",
+    marginBottom: "10px",
     paddingTop: 50,
   },
   ButtonSignin: {
