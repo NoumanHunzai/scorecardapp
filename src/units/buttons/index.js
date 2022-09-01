@@ -16,7 +16,7 @@ export default withStyles((theme) => ({
     width: "200px",
     height: "40px",
     fontSize: 16,
-
+    fontFamily: "Inter",
     "&:hover": {
       color: theme.palette.background.primary,
       backgroundColor: alpha(theme.palette.text.bold, 0.9),
