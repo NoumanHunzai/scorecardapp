@@ -13,8 +13,9 @@ const RoutesMain = () => {
       <Router>
         <Header />
         <Routes>
-          <Route exact path="/" element={<SummaryPage/>} />
+         
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/summary" element={<SummaryPage/>} />
           <Route exact path="/score" element={<CandidateScoreBoard />} />
           <Route exact path="/selectcandidate" element={<SelectCandidate />} />
 
