@@ -8,8 +8,10 @@ const CandidateScoreBoard = () => {
   return (
     <div className={classes.scoremain}>
       <div className={classes.textScore}>
-        <Typography gutterBottom>CANDIDATE SCORECARD</Typography>
-        <Typography gutterBottom>
+        <Typography gutterBottom variant="h1">
+          CANDIDATE SCORECARD
+        </Typography>
+        <Typography gutterBottom variant="paragraph">
           You’d be scoring your selected candidates in 4 sections namely:
           General, Knowledge Political History, Global & Business Exposure and
           Values. You can move forward after scoring your candidate(s) using the
@@ -18,31 +20,31 @@ const CandidateScoreBoard = () => {
       </div>
       <DividerLine margin={"10px 0px"} />
       <div className={classes.rowsbar}>
-        <Typography>General {">"}</Typography>
-        <Typography>
+        <Typography variant="body1">General {">"}</Typography>
+        <Typography variant="body2">
           Knowledge{"&"}Political History {">"}
         </Typography>
 
-        <Typography>
+        <Typography variant="body2">
           Global{"&"}Business Exposure {">"}
         </Typography>
-        <Typography>Values {">"}</Typography>
-        <Typography> Summary {">"}</Typography>
+        <Typography variant="body2">Values {">"}</Typography>
+        <Typography variant="body2"> Summary {">"}</Typography>
       </div>
       <div style={{ display: "flex" }}>
-        <InfoIcon />
-        <Typography>General</Typography>
+        <InfoIcon className={classes.icon} />
+        <Typography variant="h3">General</Typography>
       </div>
       <DividerLine margin={"30px 0px"} height={"3px"} />
       <div className={classes.names}>
-        <Typography>Candidate Name1</Typography>
-        <Typography>Candidate Name1</Typography>
-        <Typography>Candidate Name1</Typography>
+        <Typography variant="h4">Candidate Name1</Typography>
+        <Typography variant="h4">Candidate Name1</Typography>
+        <Typography variant="h4">Candidate Name1</Typography>
       </div>
       <DividerLine margin={"10px 0px"} height={"2px"} />
       <div style={{ display: "flex" }}>
-        <InfoIcon />
-        <Typography>Candidate Age</Typography>
+        <InfoIcon className={classes.icon} />
+        <Typography variant="h4">Candidate Age</Typography>
         <div className={classes.names}>
           <Select />
           <Select />
@@ -51,8 +53,8 @@ const CandidateScoreBoard = () => {
       </div>
       <DividerLine margin={"10px 0px"} height={"2px"} />
       <div style={{ display: "flex" }}>
-        <InfoIcon />
-        <Typography>Level Of Education</Typography>
+        <InfoIcon className={classes.icon} />
+        <Typography variant="h4">Level Of Education</Typography>
         <div className={classes.names}>
           <Select />
           <Select />
@@ -61,8 +63,8 @@ const CandidateScoreBoard = () => {
       </div>
       <DividerLine margin={"10px 0px"} height={"2px"} />
       <div style={{ display: "flex" }}>
-        <InfoIcon />
-        <Typography>National Recoginition</Typography>
+        <InfoIcon className={classes.icon} />
+        <Typography variant="h4">National Recoginition</Typography>
         <div className={classes.names}>
           <Select />
           <Select />
@@ -71,14 +73,14 @@ const CandidateScoreBoard = () => {
       </div>
       <DividerLine margin={"10px 0px"} height={"2px"} />
       <div style={{ display: "flex" }}>
-        <Typography>Section Subtotal</Typography>
-        <Typography>
+        <Typography variant="h4">SECTION SUBTOTAL</Typography>
+        <Typography variant="body2">
           {"("}out of 17 {")"}
         </Typography>
         <div className={classes.names}>
-          <Typography>Total candidate points</Typography>
-          <Typography>Total candidate points</Typography>
-          <Typography>Total candidate points</Typography>
+          <Typography variant="subtitle1">Total candidate points</Typography>
+          <Typography variant="subtitle1">Total candidate points</Typography>
+          <Typography variant="subtitle1">Total candidate points</Typography>
         </div>
       </div>
     </div>
@@ -113,4 +115,5 @@ const useStyles = makeStyles((theme) => ({
     left: "0px",
     marginLeft: "auto",
   },
+  icon: { color: theme.palette.primary.main, marginRight: "2px" },
 }));
