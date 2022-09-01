@@ -1,5 +1,6 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import logo2 from "../../assets/logo2.png";
 
@@ -8,8 +9,10 @@ function Header() {
   return (
     <Box className={classes.mainContainer}>
       <Box className={classes.innerContainer}>
-        <img className={classes.logoImage} src={logo} alt="logo" />
-        <img className={classes.logosec} src={logo2} alt="logo" />
+        <Link to="/">
+          <img className={classes.logoImage} src={logo} alt="logo" />
+          <img className={classes.logosec} src={logo2} alt="logo" />
+        </Link>
       </Box>
       <Box className={classes.secContainer}>
         <Box>
