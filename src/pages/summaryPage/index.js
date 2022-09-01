@@ -1,11 +1,41 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
-import chart from "../../assets/Chart.png";
 import Buttons from "../../units/buttons";
 import DividerLine from "../../units/Divider";
+import BarChart from "../../components/barChart";
 
 const SummaryPage = () => {
   const classes = useStyles();
+
+  const data = {
+    labels: [
+      "General",
+      "Knowledge&Political History",
+      "Global&Business Exposure",
+      "Values",
+    ],
+    datasets: [
+      {
+        label: "Candidate 1 - 70 points",
+        backgroundColor: "#0F4C4B",
+        data: [25, 49, 48, 71],
+      },
+
+      {
+        label: "Candidate 2 - 55 points",
+        backgroundColor: "#87A5A5",
+
+        data: [25, 39, 35, 41],
+      },
+      {
+        label: "Candidate 3 - 52 points",
+        backgroundColor: "#092D2D",
+
+        data: [5, 43, 40, 41],
+      },
+    ],
+  };
+
   return (
     <div className={classes.container}>
       <Box>
@@ -40,14 +70,16 @@ const SummaryPage = () => {
           Global{"&"}Business Exposure{" "}
           <span className={classes.tabsPadding}>{">"}</span>
         </Typography>
-        <Typography className={classes.rowsTab}>Values  <span className={classes.tabsPadding}>{">"}</span></Typography>
-        <Typography className={classes.rowsTab}> Summary  </Typography>
+        <Typography className={classes.rowsTab}>
+          Values <span className={classes.tabsPadding}>{">"}</span>
+        </Typography>
+        <Typography className={classes.rowsTab}> Summary </Typography>
       </div>
       <div className={classes.chartDetailsContainer}>
-        <img className={classes.chart} src={chart} alt="chart" />
+        <BarChart data={data} />
         <div className={classes.chartSideDetails}>
           <Typography variant="body1" className={classes.chartDetails}>
-            Legend & Score
+            Legend {"&"} Score
             <div className={classes.dotFlex}>
               <div className={classes.blackDot}></div>
               <Typography variant="body1" className={classes.chartDetails}>
@@ -70,7 +102,7 @@ const SummaryPage = () => {
         </div>
       </div>
 
-      <div className={classes.chartDetailsContainer}>
+      <div className={classes.chartButton}>
         <Buttons variant="green">Share result</Buttons>
       </div>
     </div>
@@ -111,7 +143,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
   },
-  chartSideDetails: { paddingLeft: 30 },
+  chartButton: {
+    marginTop: 30,
+    display: "flex",
+    justifyContent: "center",
+  },
+  chartSideDetails: { paddingLeft: 30, paddingTop: 30 },
   dotFlex: {
     paddingTop: 10,
     display: "flex",
